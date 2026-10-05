@@ -1,0 +1,105 @@
+
+=======================================================
+1. TAMANHO DA BASE
+=======================================================
+Linhas: 1000
+Colunas: 17
+
+=======================================================
+2. PRIMEIRAS LINHAS
+=======================================================
+    invoice_id branch       city customer_type  gender         product_line  unit_price  quantity  tax_5_percent     sales       date         time      payment    cogs  gross_margin_percentage  gross_income  rating
+0  101-17-6199   Alex     Yangon        Normal    Male   Food and beverages       45.79         7        16.0265  336.5565  3/13/2019   7:44:00 PM  Credit card  320.53                 4.761905       16.0265     7.0
+1  101-81-4070   Giza  Naypyitaw        Member  Female    Health and beauty       62.82         2         6.2820  131.9220  1/17/2019  12:36:00 PM      Ewallet  125.64                 4.761905        6.2820     4.9
+2  102-06-2002   Giza  Naypyitaw        Member    Male    Sports and travel       25.25         5         6.3125  132.5625  3/20/2019   5:52:00 PM         Cash  126.25                 4.761905        6.3125     6.1
+3  102-77-2261   Giza  Naypyitaw        Member    Male    Health and beauty       65.31         7        22.8585  480.0285   3/5/2019   6:02:00 PM  Credit card  457.17                 4.761905       22.8585     4.2
+4  105-10-6182   Alex     Yangon        Member    Male  Fashion accessories       21.48         2         2.1480   45.1080  2/27/2019  12:22:00 PM      Ewallet   42.96                 4.761905        2.1480     6.6
+
+=======================================================
+3. TIPOS DAS COLUNAS (df.info)
+=======================================================
+<class 'pandas.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 17 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   invoice_id               1000 non-null   str    
+ 1   branch                   1000 non-null   str    
+ 2   city                     1000 non-null   str    
+ 3   customer_type            1000 non-null   str    
+ 4   gender                   1000 non-null   str    
+ 5   product_line             1000 non-null   str    
+ 6   unit_price               1000 non-null   float64
+ 7   quantity                 1000 non-null   int64  
+ 8   tax_5_percent            1000 non-null   float64
+ 9   sales                    1000 non-null   float64
+ 10  date                     1000 non-null   str    
+ 11  time                     1000 non-null   str    
+ 12  payment                  1000 non-null   str    
+ 13  cogs                     1000 non-null   float64
+ 14  gross_margin_percentage  1000 non-null   float64
+ 15  gross_income             1000 non-null   float64
+ 16  rating                   1000 non-null   float64
+dtypes: float64(7), int64(1), str(9)
+memory usage: 132.9 KB
+
+
+=======================================================
+4. VALORES NULOS POR COLUNA
+=======================================================
+invoice_id                 0
+branch                     0
+city                       0
+customer_type              0
+gender                     0
+product_line               0
+unit_price                 0
+quantity                   0
+tax_5_percent              0
+sales                      0
+date                       0
+time                       0
+payment                    0
+cogs                       0
+gross_margin_percentage    0
+gross_income               0
+rating                     0
+Total de nulos: 0
+
+=======================================================
+5. LINHAS DUPLICADAS
+=======================================================
+Linhas duplicadas: 0
+Códigos de venda repetidos: 0
+
+=======================================================
+6. VALORES ÚNICOS DAS COLUNAS DE TEXTO
+=======================================================
+branch: ['Alex', 'Cairo', 'Giza']
+city: ['Mandalay', 'Naypyitaw', 'Yangon']
+customer_type: ['Member', 'Normal']
+gender: ['Female', 'Male']
+product_line: ['Electronic accessories', 'Fashion accessories', 'Food and beverages', 'Health and beauty', 'Home and lifestyle', 'Sports and travel']
+payment: ['Cash', 'Credit card', 'Ewallet']
+
+=======================================================
+7. ESTATÍSTICAS BÁSICAS (df.describe)
+=======================================================
+       unit_price  quantity  tax_5_percent    sales     cogs  gross_margin_percentage  gross_income   rating
+count     1000.00   1000.00        1000.00  1000.00  1000.00                  1000.00       1000.00  1000.00
+mean        55.67      5.51          15.38   322.97   307.59                     4.76         15.38     6.97
+std         26.49      2.92          11.71   245.89   234.18                     0.00         11.71     1.72
+min         10.08      1.00           0.51    10.68    10.17                     4.76          0.51     4.00
+25%         32.88      3.00           5.92   124.42   118.50                     4.76          5.92     5.50
+50%         55.23      5.00          12.09   253.85   241.76                     4.76         12.09     7.00
+75%         77.94      8.00          22.45   471.35   448.90                     4.76         22.45     8.50
+max         99.96     10.00          49.65  1042.65   993.00                     4.76         49.65    10.00
+
+=======================================================
+8. INCONSISTÊNCIAS ENCONTRADAS
+=======================================================
+- A coluna 'date' está como texto (object) no formato mês/dia/ano.
+- A coluna 'time' está como texto no formato 12h (AM/PM).
+- Os nomes das colunas estão em inglês.
+- Valores com muitas casas decimais (ex: 26.1415).
+- 'gross_margin_percentage' tem o mesmo valor em todas as linhas.

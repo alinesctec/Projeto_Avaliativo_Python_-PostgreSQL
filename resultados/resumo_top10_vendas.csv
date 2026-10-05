@@ -1,0 +1,11 @@
+id_venda,filial,linha_produto,quantidade,preco_unitario,valor_total,data_venda
+860-79-0874,Giza,Fashion accessories,10,99.3,1042.65,2019-02-15
+687-47-8271,Alex,Fashion accessories,10,98.98,1039.29,2019-02-08
+283-26-5248,Giza,Food and beverages,10,98.52,1034.46,2019-01-30
+751-41-9720,Giza,Home and lifestyle,10,97.5,1023.75,2019-01-12
+303-96-2227,Cairo,Home and lifestyle,10,97.38,1022.49,2019-03-02
+744-16-7898,Cairo,Home and lifestyle,10,97.37,1022.38,2019-01-15
+271-88-8734,Giza,Fashion accessories,10,97.21,1020.7,2019-02-08
+234-65-2137,Giza,Home and lifestyle,10,95.58,1003.59,2019-01-16
+554-42-2417,Giza,Sports and travel,10,95.44,1002.12,2019-01-09
+325-77-6186,Alex,Home and lifestyle,10,90.65,951.82,2019-03-08

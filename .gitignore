@@ -1,0 +1,19 @@
+# Credenciais (NUNCA enviar para o GitHub)
+.env
+
+# Ambiente virtual
+venv/
+.venv/
+
+# Arquivos gerados pelo Python
+__pycache__/
+*.pyc
+
+# Configurações de editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Cópia local de segurança
+backup/
